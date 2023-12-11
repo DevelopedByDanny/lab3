@@ -21,6 +21,16 @@ public class InputReader {
         }
     }
 
+    public static double inputDouble(String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            try {
+                return Double.parseDouble(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a valid integer.");
+            }
+        }
+    }
     /**
      * Reads a string from the console.
      * @param prompt The prompt to display to the user.

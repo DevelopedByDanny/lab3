@@ -39,14 +39,14 @@ public class PlanetDao {
         }
     }
 
-    public void planetInsert(String name, int mass, int radius) {
+    public void planetInsert(String name, double mass, int radius) {
         String sql = "INSERT INTO planets (Name, Mass, Radius) VALUES(?,?,?)";
 
         try {
-            Connection conn = DatabaseConnection.getConnection();
-            var preparedStatement = conn.prepareStatement(sql);
+            var connection = DatabaseConnection.getConnection();
+            var preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, name);
-            preparedStatement.setInt(2, mass);
+            preparedStatement.setDouble(2, mass);
             preparedStatement.setInt(3, radius);
             preparedStatement.executeUpdate();
             System.out.println("Added a planet");
@@ -113,6 +113,43 @@ public class PlanetDao {
                         ", Radius: " + resultSet.getDouble("Radius"));
             } else System.out.println("No planet found with ID " + planetId);
 
+        } catch (SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+        }
+    }
+    public void listPlanetsWithMoonCount() {
+        String sql = "SELECT p.Name, COUNT(m.MoonID) as MoonCount " +
+                "FROM planets p LEFT JOIN moons m ON p.PlanetID = m.PlanetID " +
+                "GROUP BY p.PlanetID";
+
+        try (var connection = DatabaseConnection.getConnection();
+             var statement = connection.createStatement();
+             var resultSet = statement.executeQuery(sql)) {
+
+            while (resultSet.next()) {
+                System.out.println("Planet: " + resultSet.getString("Name") +
+                        ", Number of Moons: " + resultSet.getInt("MoonCount"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Query failed: " + e.getMessage());
+        }
+    }
+
+    public void listMoonsOfPlanet(String planetName) {
+        String sql = "SELECT m.Name FROM moons m " +
+                "JOIN planets p ON m.PlanetID = p.PlanetID " +
+                "WHERE p.Name = ?";
+
+        try (var connection = DatabaseConnection.getConnection();
+             var preparedStatement = connection.prepareStatement(sql)) {
+
+            preparedStatement.setString(1, planetName);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            System.out.println("Moons of Planet " + planetName + ":");
+            while (rs.next()) {
+                System.out.println("- " + rs.getString("Name"));
+            }
         } catch (SQLException e) {
             System.out.println("Query failed: " + e.getMessage());
         }

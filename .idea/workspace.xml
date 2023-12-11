@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b33d285-13e0-4029-bd62-1b64716ae9de" name="Changes" comment="connected to DB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/Menu.java" afterDir="false" />
+    <list default="true" id="5b33d285-13e0-4029-bd62-1b64716ae9de" name="Changes" comment="planets almost done and added menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/database/MoonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/database/PlanetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/database/PlanetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/model/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/model/Moon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/InputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +42,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/perfectpoodle/Documents/jdbc-sqlite/org/sqlite",
@@ -60,8 +63,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.exercise.App" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.exercise.Main" />
       <module name="lab3" />
       <extension name="coverage">
         <pattern>
@@ -75,7 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701875079008</updated>
-      <workItem from="1701875080203" duration="22770000" />
+      <workItem from="1701875080203" duration="36264000" />
     </task>
     <task id="LOCAL-00001" summary="connected to DB">
       <option name="closed" value="true" />
@@ -97,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701958122596</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="planets almost done and added menu">
+      <option name="closed" value="true" />
+      <created>1702193591342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702193591342</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected to DB" />
+    <MESSAGE value="planets almost done and added menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="planets almost done and added menu" />
   </component>
 </project>

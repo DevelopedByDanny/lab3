@@ -5,7 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
+    private final String name;
     private final List<MenuItem> menuItems = new ArrayList<>();
+
+    public Menu(String name) {
+        this.name = name;
+
+    }
 
     public void addMenuItem(String description, Runnable action) {
         menuItems.add(new MenuItem(description, action));
@@ -13,7 +19,8 @@ public class Menu {
 
     public void displayMenu() {
         while (true) {
-            System.out.println("\nMENU OPTIONS:");
+            System.out.println("\n" + name.toUpperCase());
+            System.out.println("Options:");
             for (int i = 0; i < menuItems.size(); i++) {
                 System.out.println((i + 1) + ". " + menuItems.get(i).description());
             }
