@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class InputReader {
     private static final Scanner scanner = new Scanner(System.in);
 
-    /**
-     * Reads an integer from the console with error handling.
-     * @param prompt The prompt to display to the user.
-     * @return The integer entered by the user.
-     */
+    // Methods for controlling inputs
     public static int inputInt(String prompt) {
         while (true) {
             System.out.print(prompt);
@@ -31,11 +27,7 @@ public class InputReader {
             }
         }
     }
-    /**
-     * Reads a string from the console.
-     * @param prompt The prompt to display to the user.
-     * @return The string entered by the user.
-     */
+
     public static String inputString(String prompt) {
         System.out.print(prompt);
         return scanner.nextLine();

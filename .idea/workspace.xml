@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b33d285-13e0-4029-bd62-1b64716ae9de" name="Changes" comment="planets almost done and added menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/database/MoonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/Main.java" afterDir="false" />
+    <list default="true" id="5b33d285-13e0-4029-bd62-1b64716ae9de" name="Changes" comment="Assignment done">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/database/MoonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/database/MoonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/database/PlanetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/database/PlanetDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/model/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/model/Moon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701875079008</updated>
-      <workItem from="1701875080203" duration="36264000" />
+      <workItem from="1701875080203" duration="37401000" />
     </task>
     <task id="LOCAL-00001" summary="connected to DB">
       <option name="closed" value="true" />
@@ -108,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702193591342</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Assignment done">
+      <option name="closed" value="true" />
+      <created>1702330658917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702330658917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to DB" />
     <MESSAGE value="planets almost done and added menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="planets almost done and added menu" />
+    <MESSAGE value="Assignment done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment done" />
   </component>
 </project>

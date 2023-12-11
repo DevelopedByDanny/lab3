@@ -3,6 +3,7 @@ package com.exercise.database;
 import java.sql.*;
 
 public class PlanetDao {
+    // Crud operations
     public void countPlanets() {
         String sql = "SELECT COUNT(PlanetID) AS NumberOfPlanets FROM planets";
         try {
@@ -10,7 +11,6 @@ public class PlanetDao {
             var statement = connection.createStatement();
             var resultSet = statement.executeQuery(sql);
 
-            // loop through the result set
             while (resultSet.next()) {
                 System.out.println(
                         "Planets: " +

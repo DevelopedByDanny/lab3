@@ -70,7 +70,6 @@ public class MoonDao {
         return null;
     }
 
-
     // Update a Moon
     public void updateMoon(int moonId, int planetId, String name, double mass) {
         String sql = "UPDATE moons SET PlanetID = ?, Name = ?, Mass = ? WHERE MoonID = ?";
